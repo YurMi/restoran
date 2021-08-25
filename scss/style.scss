@@ -4,8 +4,28 @@
 @import "_footer";//<section id="footer">
 @import "_mixins";//Миксины
 @import "_popup";//Миксины
-//=========================================================
+//===================== first__page ====================================
+.first__page{
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top;
+   padding: 323px 0px 0px 0px;
+   min-width: 100vw;
+   min-height: 100vh;
+   color: #fff;
+   .first__page__content{
+    display: flex;
+    justify-content: space-between;
+    .timetable{
+        display: flex;
+        flex: 0 1 30%;
+        transform: rotate(-90deg);
+    }
+    .fp__content__center{
+        flex: 0 1 100%;
+    }
+    .fp__content__social{
 
-
-
-//=======================
+    }
+   }
+}
