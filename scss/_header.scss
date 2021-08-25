@@ -1,0 +1,109 @@
+@import "_nullstyle";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//меню Бургер===================
+.meny__burger{
+	display: none;
+}
+@media (max-width: $md1){
+	.meny__burger{
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		z-index: 10;
+	}
+	.meny__burger span,
+	.meny__burger::before,
+	.meny__burger::after{
+		position: absolute;
+		left: 0;
+		height: 10%;
+		width: 100%;
+		transition: all .3s ease;
+		background-color: #000;
+	}
+	.meny__burger::before,
+	.meny__burger::after{
+		content: '';
+	}
+	.meny__burger::before{
+		top: 0;
+	}
+	.meny__burger::after{
+		bottom: 0;
+	}
+	.meny__burger span{
+		top: 47%;
+	}
+	.header__meny{
+		z-index: 9;
+		.meny{
+			position: fixed;
+			padding: 55px 0px 20px 0px;
+			top: 0;
+			left: 0;
+			background-color: #215688f3;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			overflow: scroll;
+			left: -100%;
+			transition: .4s ease;
+			ul{
+				flex-direction: column;
+			}
+			li{
+				margin: 0px 0px 15px 0px;
+				a{
+					font-size: 34px;
+					color: #fff;
+				}
+			}
+		}
+	}
+	//========= active ======
+	body.lock{
+		overflow: hidden;
+	}
+	.meny.active{
+		left: 0;
+	}
+	.meny__burger.active::before,
+	.meny__burger.active::after{
+		background-color: #fff;;
+	}
+	.meny__burger.active span{
+		transform: scale(0);
+	}
+	.meny__burger.active::before{
+		top: 45%;
+		transform: rotate(45deg);
+	}
+	.meny__burger.active::after{
+		bottom: 45%;
+		transform: rotate(-45deg);
+	}
+ }
