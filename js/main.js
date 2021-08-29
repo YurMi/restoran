@@ -1,3 +1,5 @@
+import ibg from './ibg.js'; //Подключаю функцию ibj
+
 
 const menu__burger = document.querySelector('.menu__burger');
 const menu = document.querySelector('.menu');

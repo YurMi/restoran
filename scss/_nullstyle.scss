@@ -29,25 +29,122 @@ img{vertical-align: top;}
 //================   Основной Шрифт    =================================================================================================================================================================================================
 body{font-family:'Open Sans'; font-weight: 400;min-height: 100vh;}
 //================  Переменные Брэйкпоинты  ==========================================================================================================================================================================================
-$md1:1200px;
+$md1:1250px;
+$md1_1:1200px;
 $md2:991px;
 $md3:767px;
 $md4:575px;
 //==============================   Основная сетка БрейкПоинтов   ======================================================================================================================================================================
 .conteiner{
-	max-width: 1301px;
+	max-width: 1300px;
 	margin: 0 auto;
 	justify-content: center;
 	padding: 0 10px 0 10px;
 }
-//==============================   Стили для ".ibg" тот что JQ   ======================================================================================================================================================================
+
+//================================ Технические стили =================================================================================================================================
+.btn{
+	a{
+		display: block;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 20 / 12 * 100%;
+		color: #fff;
+		padding: 25px 62px;
+		background-color: #E8C300;
+		border-radius: 5px;
+		transition: .6s ease;
+		border: 1px solid #81808000;
+		&:hover{
+			background-color: #e8c10000;
+			border: 1px solid #818080;
+		}
+		@media (max-width: $md1){
+			padding: 15px 32px;
+			font-size: 11px;
+		}
+		@media (max-width: $md4){
+			padding: 15px 27px;
+			font-size: 11px;
+		}
+	}
+}
+.title_h2{
+	position: relative;
+	margin: 0px 0px 20px 0px;
+	h2{
+		font-family: 'Banny-Round';
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 48 / 36 * 100%;
+		text-transform: uppercase;
+		color: #000;
+		margin: 0px 0px 20px 0px;
+	}
+	&::after{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		width: 59px;
+		height: 5px;
+		background-color: #E8C300;
+		left: 50%;
+		transform:translate(-50%, -50%);
+		border-radius: 10px;
+	}
+}
+.yellow__box{
+	position: relative;
+		&::after{
+		content: '';
+		position: absolute;
+		top: 25%;
+		right: 1%;
+		width: 19.2%;
+		height: 52.6%;
+		border: 20px solid #E8C300;
+		border-radius: 5px;
+	}
+	@media (max-width: $md1_1){
+		&::after{
+			top: 50%;
+			right: 19%;
+			width: 250px;
+			height: 250px;
+		}
+	}
+	@media (max-width: $md2){
+		&::after{
+			top: 50%;
+			right: 10%;
+			width: 250px;
+			height: 250px;
+		}
+	}
+	@media (max-width: $md3){
+		&::after{
+			display: none;
+		}
+	}
+}
+.spec__title{
+	text-align: center;
+	margin: 0px 0px 45px 0px;
+	h3{
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 14 / 12 * 100%;
+		letter-spacing: 8px;
+	}
+}
+//============================== ibg===================================================================================================================================
 .ibg{
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
 }
-	.ibg img{
+.ibg img{
 	width: 0;
 	height: 0;
 	position: absolute;
