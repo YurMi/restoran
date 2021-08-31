@@ -1,4 +1,6 @@
 import ibg from './ibg.js'; //Подключаю функцию ibj
+import select_custom from "./seleck.js";
+import filter_custom from "./filter.js";
 
 
 const menu__burger = document.querySelector('.menu__burger');
@@ -11,3 +13,14 @@ if (menu__burger) {
 		menu.classList.toggle('active');
 	})
 }
+//================================= swiper ================================================================================================================================
+
+const swiper = new Swiper('.specialties__swiper', {
+	// Optional parameters
+	loop: true,
+	// If we need pagination
+	pagination: {
+		el: '.swiper-pagination',
+	},
+	spaceBetween: 20,
+});
