@@ -94,7 +94,7 @@ img {
   font-family: 'Banny-Round';
   src: url("../fonts/Banny-Round.eot");
   src: local("☺"), url("../fonts/Banny-Round.woff") format("woff"), url("../fonts/Banny-Round.ttf") format("truetype"), url("../fonts/Banny-Round.svg") format("svg");
-  font-weight: normal;
+  font-weight: normal,700;
   font-style: normal;
 }
 
@@ -148,6 +148,7 @@ body {
 
 .title_h2 {
   position: relative;
+  text-align: center;
   margin: 0px 0px 20px 0px;
 }
 
@@ -164,7 +165,7 @@ body {
 .title_h2::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   width: 59px;
   height: 5px;
   background-color: #E8C300;
@@ -172,6 +173,17 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 10px;
+}
+
+.sub__title__h2 {
+  text-align: center;
+  margin: 0px 0px 30px 0px;
+}
+
+.sub__title__h2 span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 155.55556%;
 }
 
 .yellow__box {
@@ -360,12 +372,12 @@ body {
   visibility: hidden;
 }
 
-.about, .book, .sec_menu {
+.about, .book, .sec_menu, .contact-page {
   padding: 100px 0px;
 }
 
 @media (max-width: 1200px) {
-  .about, .book, .sec_menu {
+  .about, .book, .sec_menu, .contact-page {
     padding: 45px 0px;
   }
 }
@@ -380,7 +392,7 @@ body {
   }
 }
 
-.first__page, .our, .specialties {
+.first__page, .our, .specialties, .privat {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -479,7 +491,7 @@ img {
   font-family: 'Banny-Round';
   src: url("../fonts/Banny-Round.eot");
   src: local("☺"), url("../fonts/Banny-Round.woff") format("woff"), url("../fonts/Banny-Round.ttf") format("truetype"), url("../fonts/Banny-Round.svg") format("svg");
-  font-weight: normal;
+  font-weight: normal,700;
   font-style: normal;
 }
 
@@ -533,6 +545,7 @@ body {
 
 .title_h2 {
   position: relative;
+  text-align: center;
   margin: 0px 0px 20px 0px;
 }
 
@@ -549,7 +562,7 @@ body {
 .title_h2::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   width: 59px;
   height: 5px;
   background-color: #E8C300;
@@ -557,6 +570,17 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 10px;
+}
+
+.sub__title__h2 {
+  text-align: center;
+  margin: 0px 0px 30px 0px;
+}
+
+.sub__title__h2 span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 155.55556%;
 }
 
 .yellow__box {
@@ -745,12 +769,12 @@ body {
   visibility: hidden;
 }
 
-.about, .book, .sec_menu {
+.about, .book, .sec_menu, .contact-page {
   padding: 100px 0px;
 }
 
 @media (max-width: 1200px) {
-  .about, .book, .sec_menu {
+  .about, .book, .sec_menu, .contact-page {
     padding: 45px 0px;
   }
 }
@@ -765,7 +789,7 @@ body {
   }
 }
 
-.first__page, .our, .specialties {
+.first__page, .our, .specialties, .privat {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -1152,7 +1176,7 @@ img {
   font-family: 'Banny-Round';
   src: url("../fonts/Banny-Round.eot");
   src: local("☺"), url("../fonts/Banny-Round.woff") format("woff"), url("../fonts/Banny-Round.ttf") format("truetype"), url("../fonts/Banny-Round.svg") format("svg");
-  font-weight: normal;
+  font-weight: normal,700;
   font-style: normal;
 }
 
@@ -1206,6 +1230,7 @@ body {
 
 .title_h2 {
   position: relative;
+  text-align: center;
   margin: 0px 0px 20px 0px;
 }
 
@@ -1222,7 +1247,7 @@ body {
 .title_h2::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   width: 59px;
   height: 5px;
   background-color: #E8C300;
@@ -1230,6 +1255,17 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 10px;
+}
+
+.sub__title__h2 {
+  text-align: center;
+  margin: 0px 0px 30px 0px;
+}
+
+.sub__title__h2 span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 155.55556%;
 }
 
 .yellow__box {
@@ -1418,12 +1454,12 @@ body {
   visibility: hidden;
 }
 
-.about, .book, .sec_menu {
+.about, .book, .sec_menu, .contact-page {
   padding: 100px 0px;
 }
 
 @media (max-width: 1200px) {
-  .about, .book, .sec_menu {
+  .about, .book, .sec_menu, .contact-page {
     padding: 45px 0px;
   }
 }
@@ -1438,7 +1474,7 @@ body {
   }
 }
 
-.first__page, .our, .specialties {
+.first__page, .our, .specialties, .privat {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -2732,10 +2768,6 @@ body.lock {
   opacity: 1;
 }
 
-.sec_menu {
-  padding: 45px 0px 2000px 0px;
-}
-
 .sec_menu .title_h2 {
   text-align: center;
 }
@@ -2761,6 +2793,12 @@ body.lock {
 
 .sec_menu .sec_menu__content {
   margin: 50px 0px 0px 0px;
+}
+
+@media (max-width: 900px) {
+  .sec_menu .sec_menu__content {
+    margin: 10px 0px 0px 0px;
+  }
 }
 
 .sec_menu .sec_menu__content .sec_menu__filter .filter__menu {
@@ -2799,6 +2837,7 @@ body.lock {
 
 .sec_menu .sec_menu__content .sec_menu__filter .filter__menu .filter__btn:hover {
   background-color: #E8C300;
+  cursor: pointer;
 }
 
 .sec_menu .sec_menu__content .sec_menu__filter .filter__menu .filter__btn::after {
@@ -2844,11 +2883,29 @@ body.lock {
   margin: 0px 0px 35px 0px;
 }
 
+.sec_menu .sec_menu__content .sec_menu__filter #restoran_products .restoran_product .info_up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sec_menu .sec_menu__content .sec_menu__filter #restoran_products .restoran_product .info_up .food_name {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 67%;
+          flex: 0 1 67%;
+}
+
+.sec_menu .sec_menu__content .sec_menu__filter #restoran_products .restoran_product .info_up .prise {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33%;
+          flex: 0 1 33%;
+}
+
 .sec_menu .sec_menu__content .sec_menu__filter #restoran_products .restoran_product span {
   font-family: 'Banny-Round';
   font-weight: 700;
   font-size: 18px;
-  line-height: 100%;
+  line-height: 127.77778%;
   color: #333;
   text-transform: uppercase;
 }
@@ -2858,4 +2915,373 @@ body.lock {
   line-height: 150%;
   color: #999;
   text-transform: none;
+  padding: 0px 20px 0px 0px;
+}
+
+@media (max-width: 1390px) {
+  .sec_menu .sec_menu__content .sec_menu__filter #restoran_products {
+    margin: 0 0px;
+  }
+  .sec_menu .sec_menu__content .sec_menu__filter #restoran_products .restoran_product {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    padding: 0px 15px;
+  }
+  .sec_menu .sec_menu__content .sec_menu__filter #restoran_products .restoran_product .info_up .prise {
+    text-align: right;
+  }
+}
+
+@media (max-width: 900px) {
+  .sec_menu .sec_menu__content .sec_menu__filter #restoran_products {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .sec_menu .sec_menu__content .sec_menu__filter #restoran_products .restoran_product {
+    padding: 0px 15px;
+    margin: 0px 0px 0px 0px;
+  }
+  .sec_menu .sec_menu__content .sec_menu__filter #restoran_products .restoran_product .info_up .prise {
+    text-align: right;
+  }
+  .sec_menu .sec_menu__content .sec_menu__filter #restoran_products .restoran_product p {
+    position: relative;
+  }
+  .sec_menu .sec_menu__content .sec_menu__filter #restoran_products .restoran_product p::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    right: 50%;
+    -webkit-transform: translate(50%, 0);
+            transform: translate(50%, 0);
+    width: 50%;
+    border: 1px dashed #999;
+    opacity: .2;
+  }
+}
+
+@media (max-width: 575px) {
+  .sec_menu .sec_menu__content .sec_menu__filter #restoran_products .restoran_product {
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .sec_menu .sec_menu__content .sec_menu__filter #restoran_products .restoran_product span {
+    font-size: 14px;
+  }
+}
+
+.privat {
+  padding: 45px 0px;
+}
+
+.privat .conteiner {
+  position: relative;
+}
+
+.privat .center_line,
+.privat .line_left,
+.privat .line_right {
+  height: 100%;
+  width: 100%;
+}
+
+.privat .center_line::before,
+.privat .line_left::before,
+.privat .line_right::before {
+  content: '';
+  position: absolute;
+  top: -8%;
+  height: 116%;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.privat .center_line::before {
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.privat .line_left::before {
+  left: 17%;
+}
+
+.privat .line_right::before {
+  right: 17%;
+}
+
+.privat .privat__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px -40px;
+}
+
+.privat .privat__content .privat--img {
+  width: 475px;
+  padding: 0px 0px 65.8% 0px;
+  border-radius: 5px;
+}
+
+.privat .privat__content .privat_left,
+.privat .privat__content .privat__right {
+  padding: 0px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.privat .privat__content .privat_left {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.privat .privat__content .privat__lef__black::before,
+.privat .privat__content .privat__rig__black::before {
+  content: '';
+  position: absolute;
+  top: 22%;
+  width: 52.6%;
+  height: 56.1%;
+  border: 20px solid #E8C300;
+  border-radius: 5px;
+}
+
+@media (max-width: 1200px) {
+  .privat .privat__content .privat__lef__black::before,
+  .privat .privat__content .privat__rig__black::before {
+    top: 17%;
+    right: 19%;
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 991px) {
+  .privat .privat__content .privat__lef__black::before,
+  .privat .privat__content .privat__rig__black::before {
+    top: 17%;
+    right: 10%;
+  }
+}
+
+@media (max-width: 767px) {
+  .privat .privat__content .privat__lef__black::before,
+  .privat .privat__content .privat__rig__black::before {
+    display: none;
+  }
+}
+
+.privat .privat__content .privat__lef__black::before {
+  left: -25%;
+}
+
+.privat .privat__content .privat__rig__black::before {
+  right: -25%;
+}
+
+.privat .privat__content .blac_line_left,
+.privat .privat__content .blac_line_right {
+  position: relative;
+  background-color: #000;
+  min-height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 101%;
+  padding: 0px 20px;
+}
+
+.privat .privat__content .blac_line_left {
+  top: 197px;
+  right: -196px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.privat .privat__content .blac_line_right {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  top: 197px;
+  left: -200px;
+}
+
+.privat .privat__content .privat_left span,
+.privat .privat__content .privat__right span {
+  display: block;
+  width: 100%;
+  font-family: 'Banny-Round';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.privat .privat__content .privat_left span {
+  top: 15%;
+  right: -20px;
+}
+
+.privat .privat__content .privat__right span {
+  left: -42%;
+  bottom: 17%;
+}
+
+.privat .privat__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 45px 0px 0px 0px;
+  font-size: 12px;
+  line-height: 100%;
+  opacity: .4;
+  color: #fff;
+}
+
+.privat .privat__contacts a {
+  display: inline-block;
+  font-weight: 700;
+  color: inherit;
+}
+
+@media (max-width: 1400px) {
+  .privat .privat__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px 0px 0px 0px;
+  }
+  .privat .privat__content .privat_left,
+  .privat .privat__content .privat__right {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding: 0px 0px 0px 0px;
+  }
+  .privat .privat__content .privat--img {
+    margin: 15px 0px;
+    padding: 0px 0px 396px 0px;
+  }
+}
+
+@media (max-width: 970px) {
+  .privat .privat__content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .privat .privat__contacts {
+    text-align: center;
+    line-height: 200%;
+  }
+}
+
+@media (max-width: 500px) {
+  .privat .privat__content {
+    display: block;
+  }
+  .privat .privat__content .privat--img {
+    padding: 0px 0px 70% 0px;
+    overflow: hidden;
+  }
+  .privat .privat__content .blac_line_right,
+  .privat .privat__content .blac_line_left {
+    position: absolute;
+    text-align: center;
+    top: 38%;
+  }
+  .privat .privat__content .blac_line_left {
+    right: -42.2%;
+    width: 100%;
+  }
+  .privat .privat__content .blac_line_right {
+    left: -42.2%;
+  }
+  .privat .privat__content .privat_left span,
+  .privat .privat__content .privat__right span {
+    font-size: 18px;
+  }
+}
+
+.gelary {
+  background-color: #000;
+}
+
+@media (min-width: 1440px) {
+  .gelary .gelary__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .gelary .gelary__body .gelary__photo {
+    width: 50%;
+    height: 360px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .gelary .gelary__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .gelary .gelary__body .gelary__photo {
+    width: 360px;
+    padding: 0px 0px 25% 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .gelary .gelary__body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .gelary .gelary__body .gelary__photo {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    padding: 0px 0px 35% 0px;
+  }
+}
+
+.contact-page .title_h2 {
+  margin: 0px 0px 36px 0px;
+}
+
+.contact-page .title_h2::after {
+  bottom: -20px;
+}
+
+.contact-page .sub__title__h2 {
+  max-width: 565px;
+  margin: 0 auto;
 }

@@ -787,7 +787,6 @@
 //========================= sec_menu ========================================================================================================================================
 .sec_menu{
     @extend %padding__block;
-    padding: 45px 0px 2000px 0px;
     .title_h2{
         text-align: center;
         &::after{
@@ -809,6 +808,9 @@
     }
     .sec_menu__content{
         margin: 50px 0px 0px 0px;
+        @media (max-width: 900px){
+            margin: 10px 0px 0px 0px;
+        }
         .sec_menu__filter{
             .filter__menu{
                     display: flex;
@@ -830,6 +832,7 @@
                     margin: 0px 0px 20px 0px;
                     &:hover{
                         background-color: #E8C300;
+                        cursor: pointer;
                     }
                     &::after{
                         content: '';
@@ -860,11 +863,20 @@
                     flex: 0 1 33.3333%;
                     padding: 0px 45px;
                     margin: 0px 0px 35px 0px;
+                    .info_up{
+                        display: flex;
+                        .food_name{
+                            flex: 0 1 67%;
+                        }
+                        .prise{
+                            flex: 0 1 33%;
+                        }
+                    }
                     span{
                         font-family: 'Banny-Round';
                         font-weight: 700;
                         font-size: 18px;
-                        line-height: 18 / 18 * 100%;
+                        line-height: 23 / 18 * 100%;
                         color: #333;
                         text-transform: uppercase;
                     }
@@ -873,9 +885,318 @@
                         line-height: 18 / 12 * 100%;
                         color: #999;
                         text-transform: none;
+                        padding: 0px 20px 0px 0px;
+                    }
+                }
+                @media (max-width: 1390px){
+                    margin: 0 0px;
+                    .restoran_product{
+                        flex: 0 1 50%;
+                        padding: 0px 15px;
+                        .info_up{
+                            .prise{
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+                 @media (max-width: 900px){
+                     flex-direction: column;
+                     max-width: 600px;
+                     margin: 0 auto;
+                    .restoran_product{
+                        padding: 0px 15px;
+                        margin: 0px 0px 0px 0px;
+                        .info_up{
+                            .prise{
+                                text-align: right;
+                            }
+                        }
+                        p{
+                            position: relative;
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                bottom: -2px;
+                                right: 50%;
+                                transform: translate(50%,0);
+                                width: 50%;
+                                border: 1px dashed #999;
+                                opacity: .2;
+                            }
+                        }
+                    }
+                }
+                @media (max-width: $md4){
+                    .restoran_product{
+                        padding: 0px 0px 0px 0px;
+                    }
+                }
+                @media (max-width: 400px){
+                    .restoran_product{
+                        span{
+                            font-size: 14px;
+                        }
                     }
                 }
             }
         }
+    }
+}
+//========================= privat ========================================================================================================================================
+.privat{
+    @extend %bg__block;
+    padding: 45px 0px;
+    .conteiner{
+        position: relative;
+    }
+    .center_line,
+    .line_left,
+    .line_right{
+        height: 100%;
+        width: 100%;
+        &::before{
+            content: '';
+            position: absolute;
+            top: -8%;
+            height: 116%;
+            width: 1px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    }
+    .center_line{
+        &::before{
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+    .line_left{
+        &::before{
+            left: 17%;
+        }
+    }
+    .line_right{
+        &::before{
+            right: 17%;
+        }
+    }
+    //=================
+    .privat__content{
+        display: flex;
+        margin: 0px -40px;
+        .privat--img{
+            width: 475px;
+            padding: 0px 0px 65.8% 0px;
+            border-radius: 5px;
+        }
+        .privat_left,
+        .privat__right{
+            padding: 0px 40px;
+            display: flex;
+            flex: 0 1 50%;
+        }
+        .privat_left{
+            justify-content: flex-end;
+        }
+        //??Yellow box====================
+        .privat__lef__black,
+        .privat__rig__black{
+              &::before{
+                content: '';
+                position: absolute;
+                top: 22%;
+                width: 52.6%;
+                height: 56.1%;
+                border: 20px solid #E8C300;
+                border-radius: 5px;
+                @media (max-width: $md1_1){
+                        top: 17%;
+                        right: 19%;
+                        width: 250px;
+                        height: 250px;
+                }
+                @media (max-width: $md2){
+                        top: 17%;
+                        right: 10%;
+                }
+                @media (max-width: $md3){
+                    display: none;
+                }
+            }
+        }
+        .privat__lef__black{
+            &::before{
+                left: -25%;
+            }
+        }
+        .privat__rig__black{
+            &::before{
+                right: -25%;
+            }
+        }
+        //?====================================
+        .blac_line_left,
+        .blac_line_right{
+            position: relative;
+            background-color: #000;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            width: 101%;
+            padding: 0px 20px;
+        }
+        .blac_line_left{
+            top: 197px;
+            right: -196px;
+            transform: rotate(90deg);
+        }
+        .blac_line_right{
+            transform: rotate(-90deg);
+            top: 197px;
+            left: -200px;
+        }
+        .privat_left,
+        .privat__right{
+            span{
+                display: block;
+                width: 100%;
+                font-family: 'Banny-Round';
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 24 / 24 * 100%;
+                color: #fff;
+                text-transform: uppercase;
+                z-index: 1;
+            }
+        }
+        .privat_left{
+            span{
+                top: 15%;
+                right: -20px;
+            }
+        }
+        .privat__right{
+            span{
+                left: -42%;
+                bottom: 17%;
+            }
+        }
+    }
+    //===================
+    .privat__contacts{
+        display: flex;
+        justify-content: center;
+        margin: 45px 0px 0px 0px;
+        font-size: 12px;
+        line-height: 12 / 12 * 100%;
+        opacity: .4;
+        color: #fff;
+        a{
+            display: inline-block;
+            font-weight: 700;
+            color: inherit;
+        }
+    }
+//===========================================
+    @media (max-width: 1400px){
+        .privat__content{
+            flex-direction: column;
+            margin: 0px 0px 0px 0px;
+            .privat_left,
+            .privat__right{
+                flex: 0 1 100%;
+                padding: 0px 0px 0px 0px;
+            }
+            .privat--img{
+                margin: 15px 0px;
+                padding: 0px 0px 396px 0px;
+            }
+        }
+    }
+    @media (max-width: 970px){
+        .privat__content{
+            align-items: center;
+        }
+    }
+    @media (max-width: 600px){
+        .privat__contacts{
+            text-align: center;
+            line-height: 24 / 12 * 100%;
+        }
+    }
+    @media (max-width: 500px){
+        .privat__content{
+            display: block;
+            .privat--img{
+                padding: 0px 0px 70% 0px;
+                overflow: hidden;
+            }
+             .blac_line_right,
+             .blac_line_left{
+                position: absolute;
+                text-align: center;
+                 top: 38%;
+            }
+            .blac_line_left{
+                right: -42.2%;
+                width: 100%;
+            }
+            .blac_line_right{
+                left: -42.2%;
+            }
+            .privat_left,
+            .privat__right{
+                span{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+//========================== gelary =======================================================================================================================================
+.gelary{
+    background-color: #000;
+    @media (min-width: 1440px){
+        .gelary__body{
+            display: flex;
+            justify-content: center;
+            .gelary__photo{
+                width: 50%;
+                height: 360px;
+            }
+        }
+    }
+    @media (max-width: 1440px){
+        .gelary__body{
+            display: flex;
+            justify-content: center;
+            .gelary__photo{
+                width: 360px;
+                padding: 0px 0px 25% 0px;
+            }
+        }
+    }
+    @media (max-width: 767px){
+        .gelary__body{
+            flex-wrap: wrap;
+            .gelary__photo{
+                flex: 0 1 50%;
+                padding: 0px 0px 35% 0px;
+            }
+        }
+    }
+}
+//========================= contact-page =======================================================================================================================================
+.contact-page{
+    @extend %padding__block;
+    .title_h2{
+        margin: 0px 0px 36px 0px;
+        &::after{
+            bottom: -20px;
+        }
+    }
+    .sub__title__h2{
+        max-width: 565px;
+        margin: 0 auto;
     }
 }

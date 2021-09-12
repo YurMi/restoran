@@ -21,7 +21,7 @@ img{vertical-align: top;}
 	font-family: 'Banny-Round';
 	src: url('../fonts/Banny-Round.eot');
 	src: local('☺'), url('../fonts/Banny-Round.woff') format('woff'), url('../fonts/Banny-Round.ttf') format('truetype'), url('../fonts/Banny-Round.svg') format('svg');
-	font-weight: normal;
+	font-weight: normal,700;
 	font-style: normal;
 }
 
@@ -71,6 +71,7 @@ $md4:575px;
 }
 .title_h2{
 	position: relative;
+	text-align: center;
 	margin: 0px 0px 20px 0px;
 	h2{
 		font-family: 'Banny-Round';
@@ -84,7 +85,7 @@ $md4:575px;
 	&::after{
 		content: '';
 		position: absolute;
-		bottom: 0;
+		bottom: 0px;
 		width: 59px;
 		height: 5px;
 		background-color: #E8C300;
@@ -92,6 +93,15 @@ $md4:575px;
 		transform:translate(-50%, -50%);
 		border-radius: 10px;
 	}
+}
+.sub__title__h2{
+	text-align: center;
+	 margin: 0px 0px 30px 0px;
+		span{
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 28 / 18 * 100%;
+		}
 }
 .yellow__box{
 	position: relative;
