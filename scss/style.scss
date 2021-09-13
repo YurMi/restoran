@@ -1199,4 +1199,150 @@
         max-width: 565px;
         margin: 0 auto;
     }
+    input,
+    textarea{
+        border-radius: 5px;
+        background-color: #E5E5E5;
+        width: 100%;
+        padding: 25px;
+        color: #333;
+        font-size: 19px;
+        line-height: 19 / 14 * 100%;
+        margin: 0px 0px 10px 0px;
+    }
+    .contact-page_form__body{
+        margin: 52px 0px 0px 0px;
+        .form__top{
+            display: flex;
+            margin: 0px -5px;
+            .input{
+                padding: 0px 5px;
+                flex: 0 1 33.333%;
+            }
+            input{
+                height: 60px;
+            }
+            input:focus{
+                color: #000;
+            }
+        }
+        .form__middium{
+            .input_texteria{
+                min-height: 120px;
+            }
+        }
+    }
+    .form__footer{
+        display: flex;
+        align-items: center;
+        .form__cont--data{
+            display: flex;
+            flex: 1 1 100%;
+            font-size: 12px;
+            line-height: 16 / 12 * 100%;
+            color: #999;
+            font-weight: 700;
+            a{
+                color: inherit;
+            }
+            .adres,
+            .phone,
+            .email{
+                display: flex;
+                margin: 0px 20px 0px 0px;
+                max-width: 210px;
+                &:last-child{
+                    margin: 0px 0px 0px 0px;
+                }
+                img{
+                    width: 11px;
+                    height: 14px;
+                    margin: 0px 10px 0px 0px;
+                }
+            }
+            .phone{
+                display: flex;
+                .phone__namber{
+                    display: flex;
+                }
+            }
+        }
+        .button{
+            height: 60px;
+            width: 640px;
+            background-color: #E8C300;
+            color: #fff;
+            font-size: 12px;
+            line-height: 20 / 12 * 100%;
+            border-radius: 5px;
+            transition: .6s ease;
+            &:hover{
+                background-color: #E5E5E5;
+                color: #000;
+            }
+        }
+    }
+    @media (max-width: 1280px){
+        .form__footer{
+            flex-direction: column-reverse;
+            .form__cont--data{
+                font-size: 18px;
+                .adres,
+                .phone,
+                .email{
+                    align-items: center;
+                    margin: 0px 20px 0px 0px;
+                    max-width: 400px;
+                    &:last-child{
+                        margin: 0px 0px 0px 0px;
+                    }
+                    img{
+                        width: 28px;
+                        height: 28px;
+                        margin: 0px 10px 0px 0px;
+                    }
+                }
+            }
+            .form__btn{
+                width: 100%;
+                margin: 0px 0px 40px 0px;
+                .button{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @media (max-width: $md2){
+        .form__footer{
+            .form__cont--data{
+                flex-direction: column;
+                .adres,
+                .phone,
+                .email{
+                    width: 100%;
+                    margin: 0px 0px 30px 0px;
+                    img{
+                        margin: 0px 40px 0px 0px;
+                    }
+                }
+                .phone{
+                    .phone__namber{
+                        flex-wrap: wrap;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: $md3){
+        .contact-page_form__body{
+            max-width: 600px;
+            margin: 30px auto;
+            .form__top{
+                flex-direction: column;
+                .input{
+                    flex: 1 1 100%;
+                }
+            }
+        }
+    }
 }
