@@ -91,7 +91,20 @@ img {
 }
 
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   overflow: hidden;
+}
+
+.wrapper .main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
 }
 
 @font-face {
@@ -492,7 +505,20 @@ img {
 }
 
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   overflow: hidden;
+}
+
+.wrapper .main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
 }
 
 @font-face {
@@ -840,6 +866,8 @@ body {
 
 .header .header__menu {
   position: relative;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
 }
 
 @media (max-width: 991px) {
@@ -865,6 +893,8 @@ body {
   width: 150px;
   height: 150px;
   z-index: 100;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
 }
 
 .header .header__menu .header__menu_logo img {
@@ -991,6 +1021,32 @@ body {
 @media (max-width: 991px) {
   .header .header__menu .menu li {
     min-width: 100%;
+  }
+}
+
+.header.scroll__menu {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 991px) {
+  .header.scroll__menu {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+.header.scroll__menu .header__menu .menu li a {
+  padding: 20px 0px;
+}
+
+.header.scroll__menu .header__menu_logo {
+  width: 80px;
+  height: 80px;
+}
+
+@media (max-width: 991px) {
+  .header.scroll__menu .header__menu_logo {
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -1181,7 +1237,20 @@ img {
 }
 
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   overflow: hidden;
+}
+
+.wrapper .main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
 }
 
 @font-face {

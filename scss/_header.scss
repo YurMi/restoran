@@ -25,6 +25,7 @@
 	}
 	.header__menu{
 		position: relative;
+		transition: .4s ease;
 		@media (max-width: $md2){
 			&::after{
 				content: '';
@@ -46,6 +47,7 @@
 			width: 150px;
 			height: 150px;
 			z-index: 100;
+			transition: .4s ease;
 			& img{
 				max-width: 100%;
 				z-index: 100;
@@ -120,6 +122,28 @@
 					min-width: 100%;
 				}
 			}
+		}
+	}
+}
+
+.header.scroll__menu{
+	background-color: rgba(0, 0, 0, 0.6);
+	@media (max-width: $md2){
+		background-color: rgba(0, 0, 0, 0);
+	}
+	.header__menu{
+		.menu{
+			li a{
+				padding: 20px 0px;
+			}
+		}
+	}
+	.header__menu_logo{
+		width: 80px;
+		height: 80px;
+		@media (max-width: $md2){
+			width: 60px;
+			height: 60px;
 		}
 	}
 }
