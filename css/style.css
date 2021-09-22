@@ -314,7 +314,7 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 0px 45px 0px 0px;
+  padding: 0 45px 0 0px;
 }
 
 .sec__content__revers .rig_si .rig_si--img {
@@ -728,7 +728,7 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 0px 45px 0px 0px;
+  padding: 0 45px 0 0px;
 }
 
 .sec__content__revers .rig_si .rig_si--img {
@@ -1460,7 +1460,7 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 0px 45px 0px 0px;
+  padding: 0 45px 0 0px;
 }
 
 .sec__content__revers .rig_si .rig_si--img {
