@@ -2,9 +2,7 @@
 @import "_nullstyle";
 @import "_header";//<section id="header">
 @import "_footer";//<section id="footer">
-// @import "_data_piker";//_data_piker
-@import "_mixins";//Миксины
-@import "_popup";//Миксины
+@import "_data_piker";//_data_piker
 //===================== first__page ====================================
 .first__page{
    @extend %bg__block;
